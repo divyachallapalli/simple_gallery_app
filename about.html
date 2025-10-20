@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./shared.css'>
+    <script src='./shared.js'></script>
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+
+        section {
+            height: 400px;
+
+        }
+
+        .content {
+            /* position: relative; */
+            margin: 60px 20px;
+
+            height: 100%;
+            /* background-color: rgb(255, 255, 255); */
+        }
+
+        .content .owner {
+            padding: 10px;
+            margin: 20px;
+            border: 2px solid rgb(192, 189, 189);
+            background-color: aliceblue;
+            overflow: hidden;
+            /* Clear floats */
+        }
+
+        .content .owner .owner__details h2 {
+            font-size: 30px;
+            color: #364500;
+            /* padding: 10px; */
+        }
+
+        .content .owner .owner__details p {
+            font-size: medium;
+            font-style: italic;
+            line-height: 1.6;
+            margin-top: 10px;
+            color: rgb(201, 114, 0);
+        }
+
+        .owner__img {
+            height: auto;
+            width: 25%;
+            padding-left: 40px;
+            padding-right: 0px;
+            float: left;
+            margin: 0px;
+        }
+
+        .owner__details {
+            width: 75%;
+            text-align: right;
+            float: left;
+            margin-top: 80px;
+            padding: 40px;
+            /* position: static;
+                left: 0;
+                bottom: 0; */
+            /* 
+           bottom: 40px;
+           margin :auto;
+           position: relative;
+           left: 20px; */
+
+
+        }
+
+        .owner__img img {
+
+            height: 100%;
+            width: 100%;
+            border-radius: 140px;
+            /* display: inline-block */
+        }
+
+        .owner.reverse .owner__details {
+
+            text-align: left;
+            float: right;
+        }
+
+        .owner.reverse .owner__img {
+            float: right;
+            padding-right: 40px;
+            padding-left: 0px;
+        }
+
+
+
+
+
+        @media (max-width: 768px) {
+
+            .main-nav {
+                display: none;
+            }
+
+            .header {
+                width: calc(100% - 72px);
+            }
+
+            .owner__details{
+                width: 100%;
+                display: block;
+                margin: 0.8rem auto;
+                padding: 10; 
+            }
+
+            .content .owner .owner__details h2{
+                font-size: 1.5rem;
+                text-align: center;
+            }
+
+             .content .owner .owner__details p{
+                font-size: 0.7rem;
+                text-align: center;
+            }
+
+            .owner__img {
+                width: 50%;
+                float: none;
+                padding: 0;
+                margin: 0 auto;
+            }
+
+            .owner.reverse .owner__img {
+                padding: 0;
+                margin: 0 auto;
+                float: none;
+            }
+
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="nav_side_menu">☰</div>
+        <div class="header">Flowers Shop</div>
+        <nav class="main-nav">
+            <ul class="main-nav_items">
+                <li class="main-nav_item"><a href="boxmodel.html">Home</a></li>
+                <li class="main-nav_item"><a href="about.html">About</a></li>
+                <li class="main-nav_item"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="side_bar">
+        <ul class="side_bar_items">
+            <li class="side_bar_item"><a href="boxmodel.html">Home</a></li>
+            <li class="side_bar_item"><a href="about.html">About</a></li>
+            <li class="side_bar_item"><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <section class="content">
+
+
+        <div class="owner">
+            <div class="owner__img">
+                <img class="" src="images/owner_1.png" alt="owner1">
+            </div>
+
+            <div class="owner__details">
+                <h2>Mr.Veeracharyulu</h2>
+                <p>Welcome to our flower shop! We are passionate about providing beautiful, fresh flowers for all
+                    occasions. Our team of experienced florists is dedicated to creating stunning arrangements that
+                    bring joy and elegance to your events. Whether you're celebrating a birthday, anniversary, wedding,
+                    or simply want to brighten someone's day, we have the perfect bouquet for you. We source our flowers
+                    from local growers to ensure the highest quality and freshness. Thank you for choosing us for your
+                    floral needs!</p>
+            </div>
+        </div>
+
+        <div class="owner reverse">
+            <div class="owner__img">
+                <img class="" src="images/owner_2.png" alt="owner1">
+            </div>
+
+            <div class="owner__details">
+                <h2>Mrs.Divyakala</h2>
+                <p>Welcome to our flower shop! We are passionate about providing beautiful, fresh flowers for all
+                    occasions. Our team of experienced florists is dedicated to creating stunning arrangements that
+                    bring joy and elegance to your events. Whether you're celebrating a birthday, anniversary, wedding,
+                    or simply want to brighten someone's day, we have the perfect bouquet for you. We source our flowers
+                    from local growers to ensure the highest quality and freshness. Thank you for choosing us for your
+                    floral needs!</p>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <div class="footer">
+        <p>&copy; 2024 Flowers Shop. All rights reserved.</p>
+    </div>
+</body>
+
+</html>
