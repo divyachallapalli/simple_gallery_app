@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./shared.css'>
+    <script src='./shared.js'></script>
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .contact_form{
+            height: 400px;
+           
+            padding: 2rem;
+        
+             margin-top:5rem;
+        }
+
+        .contact_form form input,
+        .contact_form form label,
+        .contact_form form textarea{
+            display: block;
+            margin-top: 1rem;
+            width: 100%;
+        }
+
+        .contact_form .content h1{
+            text-align: center;
+            font-size: x-large;
+            color: rgb(104, 180, 197);
+        }
+
+        .contact_form button{
+            margin-top: 1.5rem;
+            padding: 0.5rem 1rem;
+            background-color: #97a85a;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-left: 40%;
+        }
+
+         
+      
+        .footer{
+            position: fixed;
+            bottom: 0px;
+        }
+
+        
+         @media (min-width: 768px) {
+            .contact_form form {
+                width: 50%;
+                margin-left: 25%;
+            }
+        
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="nav_side_menu">☰</div>
+        <div class="header">Flowers Shop</div>
+        <nav class="main-nav">
+            <ul class="main-nav_items">
+                <li class="main-nav_item"><a href="./index.html">Home</a></li>
+                <li class="main-nav_item"><a href="./about.html">About</a></li>
+                <li class="main-nav_item"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="side_bar">
+        <ul class="side_bar_items">
+            <li class="side_bar_item"><a href="index.html">Home</a></li>
+            <li class="side_bar_item"><a href="about.html">About</a></li>
+            <li class="side_bar_item"><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <main class="contact_form">
+
+        <section class="content">
+            <h1>Contact Us</h1>
+            <form action="#" method="post" class="form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+     
+
+    </main>
+
+    <div class="footer">
+        <p>&copy; 2024 Flowers Shop. All rights reserved.</p>
+    </div>
+</body>
+
+</html>

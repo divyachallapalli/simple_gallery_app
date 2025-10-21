@@ -107,5 +107,16 @@
      .nav_side_menu {
          display: none;
      }
+ }
+
+ @media(max-width:767px) {
+     .main-nav {
+         display: none;
+     }
+
+     .main-header .header{
+       width: calc(100% - 70px);
+       font-size: 1.2rem;
+     }
 
  }
